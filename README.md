@@ -4,7 +4,7 @@
 + Revision: version#3
 + License: Public Domain
 
-# Project: {Self-sufficient Watering IoT Station for Vertical Garden}
+# Project: Self-sufficient Watering IoT Station for Vertical Garden
 
 ## Project Description:
 Having Vertical Gardens on balcony is cool but, how about taking a long and well deserved rest, taking a summer break away from home and then, what happens when you're back from paradise? You find hell in your garder: All the beautiful plants you've been caring of for the entire year, turns into a bunch of dry and dead tangles.
@@ -15,11 +15,11 @@ You want a self-sufficient solution, able to detect when the plants needs water,
 ## Step 1: Installation
 
 What will you need to execute this project succesfully:
-- Arduino Giga R1 wifi;
-- 4-Relay Module HW-316;
-- 2 (or 4 or more) Capacitive Sensors for Soil Moisture;
-- 2 (or 4 or more) Mini immersive pumps 3V.
-- Smartphone with Arduino IoT Remote APP.
+1. Arduino Giga R1 wifi;
+2. 4-Relay Module HW-316;
+3. 2 (or 4 or more) Capacitive Sensors for Soil Moisture;
+4. 2 (or 4 or more) Mini immersive pumps 3V.
+5. Smartphone with Arduino IoT Remote APP.
 
 
 ## Step 2: Assemble the circuit
@@ -44,7 +44,9 @@ Before proceeding, you need to create cloud variables to make sure being able to
 Upload the code contained in this sketch on to your board
 
 Consider the following elements:
-- humiditySensor1 = constrain(map(raw1, 600, 350, 0, 100), 0, 100) 
+```
+humiditySensor1 = constrain(map(raw1, 600, 350, 0, 100), 0, 100) 
+```
 Helps to map the humidity measured in percentage, based on the sensors I purchased. I encourage to build an easy sketch ad the beginning, to monitor the raw readings of the impedence, so that it's possible to understand what is the value on a dry soil, and what is the value on a saturated wet soil. After that, consider those 2 extremes as lower and upper constrains;
 
 ```
