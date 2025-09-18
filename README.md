@@ -87,17 +87,17 @@ https://github.com/user-attachments/assets/082f8aba-0ab7-4331-8e21-dc6ac1badea5
 
 ....
 
-###License
+### License
 
 This project is released under a {Public Domain} License.
 
 
-###Contributing
+### Contributing
 
 To contribute to this project please contact: 
 mattiamangiajobs@outlook.it
 
 
-###BOM
+### BOM
 
 Total cost of the project: circa 90 euros
