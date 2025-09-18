@@ -28,10 +28,11 @@ void setup() {
 void loop() {
   ArduinoCloud.update();
 
-  // 💡 Master switch control
+// Master switch control
   if (!button) {
     if (pumpActive) {
-      digitalWrite(pumpRelayPin, HIGH);  // turn off pump
+      digitalWrite(pumpRelayPin, HIGH);  
+// turn off pump
       pumpState = false;
       pumpActive = false;
       Serial.println("System paused. Pump OFF.");
@@ -53,17 +54,18 @@ void loop() {
 
   unsigned long currentMillis = millis();
 
-  // --- Auto watering logic
+// --- Auto watering logic
   if ((humiditySensor1 < 30 || humiditySensor2 < 30) && !pumpActive) {
     if (attempts < 3 && currentMillis - lastAttemptTime > 10000) {
       pumpState = true;
       digitalWrite(pumpRelayPin, LOW); // ON
       pumpActive = true;
       pumpStartTime = currentMillis;
-      activationCounter++; // Count this attempt
+      activationCounter++; 
+// Count this attempt
       Serial.println("Auto Pump ON (one or both sensors < 30)");
     } else if (attempts >= 3 && currentMillis - lastFullAttemptTime >= 3600000) {
-      // ⏱ One hour has passed since last full try
+// One hour has passed since last full try
       Serial.println("Resetting attempts after 1 hour wait");
       attempts = 0;
     }
@@ -76,7 +78,7 @@ void loop() {
       pumpActive = false;
       attempts = 0;
       Serial.println("Humidity OK (both sensors ≥ 70), Pump OFF");
-    } else if (currentMillis - pumpStartTime >= 5000) {  // ⏱ 5 sec timeout
+    } else if (currentMillis - pumpStartTime >= 5000) {  // 5 sec timeout
       pumpState = false;
       digitalWrite(pumpRelayPin, HIGH); // OFF
       pumpActive = false;
