@@ -73,7 +73,7 @@ This entire part is customized on a behavior I intentionally set up. The humidit
 Now that you have all set up, you can play with dashboard construction. Try to make elements fit the screen in a nice way, and make sure to play with some parts to make sure to have the right level of interaction:
 ![WhatsApp Image 2025-09-18 at 16 17 02](https://github.com/user-attachments/assets/4996012b-a369-4555-9eab-77dde445926d)
 
-
+Video:
 https://github.com/user-attachments/assets/082f8aba-0ab7-4331-8e21-dc6ac1badea5
 
 
@@ -87,12 +87,17 @@ https://github.com/user-attachments/assets/082f8aba-0ab7-4331-8e21-dc6ac1badea5
 
 ....
 
-=== License
+###License
+
 This project is released under a {Public Domain} License.
 
-=== Contributing
+
+###Contributing
+
 To contribute to this project please contact: 
 mattiamangiajobs@outlook.it
 
-=== BOM
+
+###BOM
+
 Total cost of the project: circa 90 euros
