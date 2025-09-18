@@ -47,8 +47,7 @@ Consider the following elements:
 - humiditySensor1 = constrain(map(raw1, 600, 350, 0, 100), 0, 100) 
 Helps to map the humidity measured in percentage, based on the sensors I purchased. I encourage to build an easy sketch ad the beginning, to monitor the raw readings of the impedence, so that it's possible to understand what is the value on a dry soil, and what is the value on a saturated wet soil. After that, consider those 2 extremes as lower and upper constrains;
 
-Bash
->
+```
 if ((humiditySensor1 < 30 || humiditySensor2 < 30) && !pumpActive) {
     if (attempts < 3 && currentMillis - lastAttemptTime > 10000) {
       pumpState = true;
@@ -63,7 +62,7 @@ if ((humiditySensor1 < 30 || humiditySensor2 < 30) && !pumpActive) {
       attempts = 0;
     }
   }
->
+```
 This entire part is customized on a behavior I intentionally set up. The humidity level, the attempts and the wait time till last attempts, can be calibrated based on the plants, the ground and the dimention of the vases;
 
 
