@@ -30,12 +30,12 @@ You can Cable every element as per the following Diagram:
 
 ## Step 3: Set up Cloud Variables
 Before proceeding, you need to create cloud variables to make sure being able to monitor those values live, and build a nice Dashboard interface.
-- activationCounter: int activationCounter | Integer number | Read Only | On Change
-- button: bool button | Boolean | Read & Write | On Change
-- humiditySensor1: int humiditySensor1 | Integer number | Read Only | On Change
-- humiditySensor2: int humiditySensor2 | Integer number | Read Only | On Change
+- `activationCounter`: int activationCounter | Integer number | Read Only | On Change
+- `button`: bool button | Boolean | Read & Write | On Change
+- `humiditySensor1`: int humiditySensor1 | Integer number | Read Only | On Change
+- `humiditySensor2`: int humiditySensor2 | Integer number | Read Only | On Change
 - ..you can add as many sensors as you need
-- pumpState: bool pumpState | Boolean | Read & Write | On Change
+- `pumpState`: bool pumpState | Boolean | Read & Write | On Change
 - ..you can add as many pumps as you need
 
 
