@@ -1,6 +1,7 @@
 #include <ArduinoIoTCloud.h>
 #include "thingProperties.h"
 
+// In my experiment, I'm using 2 sensors and 1 pump for a long pot that needs 2 observation points and 1 irrigation point
 const int sensor1Pin = A0;
 const int sensor2Pin = A1;
 const int pumpRelayPin = 4;
@@ -41,12 +42,13 @@ void loop() {
     return;
   }
 
-  // --- Read and map sensor values
+// --- Read and map sensor values, here we want to map the values we identified to be the minimum (dry soil) and maximum (wet saturated soil) 
   int raw1 = analogRead(sensor1Pin);
   int raw2 = analogRead(sensor2Pin);
   humiditySensor1 = constrain(map(raw1, 600, 350, 0, 100), 0, 100);
   humiditySensor2 = constrain(map(raw2, 600, 350, 0, 100), 0, 100);
 
+// here we print for debugging reasons
   Serial.print("Humidity1: ");
   Serial.print(humiditySensor1);
   Serial.print(" | Humidity2: ");
