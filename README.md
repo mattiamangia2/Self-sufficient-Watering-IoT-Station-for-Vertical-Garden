@@ -31,7 +31,9 @@ Elements with dashed lines and transparency, refer to the possibility to expand 
 
 
 ## Step 3: Set up Cloud Variables
-Before proceeding, you need to create cloud variables to make sure being able to monitor those values live, and build a nice Dashboard interface.
+
+Since you want to make sure to have the possibility to live interact and have a full IoT experience,you will need to create cloud variables, refer to them in the code, and build a nice Dashboard interface:
+
 - `activationCounter`: int activationCounter | Integer number | Read Only | On Change
 - `button`: bool button | Boolean | Read & Write | On Change
 - `humiditySensor1`: int humiditySensor1 | Integer number | Read Only | On Change
