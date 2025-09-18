@@ -24,8 +24,10 @@ What will you need to execute this project succesfully:
 
 ## Step 2: Assemble the circuit
 
-You can Cable every element as per the following Diagram:
+To successfully connect every element of the circuit correctly, please follow the following Diagram:
 ![watering system](https://github.com/user-attachments/assets/d1fd3677-31e4-49bd-b19c-79e7c3bd7ca9)
+
+Elements with dashed lines and transparency, refer to the possibility to expand modularly. 
 
 
 ## Step 3: Set up Cloud Variables
